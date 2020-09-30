@@ -1,32 +1,32 @@
-# UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO
-# Facultad de Economía
-# Estadística 2020-2
-# Profesor: Cesar Hernández
-# Medidas de dispersión
-# Asimetría en R: función skewness()
+# UNIVERSIDAD NACIONAL AUTÃ“NOMA DE MÃ‰XICO
+# Facultad de EconomÃ­a
+# EstadÃ­stica 2020-2
+# Profesor: Cesar HernÃ¡ndez
+# Medidas de dispersiÃ³n
+# AsimetrÃ­a en R: funciÃ³n skewness()
 
 library(moments)
 
-# Distribución normal
+# DistribuciÃ³n normal
 
 normal <- rnorm(10000, 3, 5)
 hist(normal, probability = T)
 lines(density(normal), col = "red", lwd = 3)
 
-skewness(normal) # Simétrica, asimetría = 0
+skewness(normal) # SimÃ©trica, asimetrÃ­a = 0
 
-# Asimetría positiva > 0
+# AsimetrÃ­a positiva > 0
 
 asimetria_positiva <- rnbinom(10000, 10, 0.5)
 hist(asimetria_positiva, probability = T)
 lines(density(asimetria_positiva), col = "red", lwd = 3)
 
-skewness(asimetria_positiva) # Asimetría positiva
+skewness(asimetria_positiva) # AsimetrÃ­a positiva
 
-# Asimetría negativa < 0
+# AsimetrÃ­a negativa < 0
 
 asimetria_negativa <- -asimetria_positiva
 hist(asimetria_negativa, probability = T)
 lines(density(asimetria_negativa), col = "red", lwd = 3)
 
-skewness(asimetria_negativa) # Asimetría negativa
+skewness(asimetria_negativa) # AsimetrÃ­a negativa
