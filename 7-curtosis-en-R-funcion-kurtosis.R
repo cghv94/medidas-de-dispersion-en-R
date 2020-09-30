@@ -1,30 +1,30 @@
-# UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO
-# Facultad de Economía
-# Estadística 2020-2
-# Profesor: Cesar Hernández
-# Medidas de dispersión
-# Curtosis en R: función kurtosis()
+# UNIVERSIDAD NACIONAL AUTÃ“NOMA DE MÃ‰XICO
+# Facultad de EconomÃ­a
+# EstadÃ­stica 2020-2
+# Profesor: Cesar HernÃ¡ndez
+# Medidas de dispersiÃ³n
+# Curtosis en R: funciÃ³n kurtosis()
 
-# Distribución normal
+# DistribuciÃ³n normal
 
 normal <- rnorm(10000, 7, 11)
 hist(normal, probability = T)
 lines(density(normal), col = "red", lwd = 3)
 
-kurtosis(normal) # Mesocúrtica, curtosis = 3
+kurtosis(normal) # MesocÃºrtica, curtosis = 3
 
-# Leptocúrtica > 3
+# LeptocÃºrtica > 3
 
 leptocurtica <- c(rnorm(1000, -2, 4), rnorm(5000, 0, 2), rnorm(1000, 2, 4))
 hist(leptocurtica, probability = T)
 lines(density(leptocurtica), col = "red", lwd = 3)
 
-kurtosis(leptocurtica) # Leptocúrtica
+kurtosis(leptocurtica) # LeptocÃºrtica
 
-# Platicúrtica < 3
+# PlaticÃºrtica < 3
 
 platicurtica <- c(rnorm(1000, -2, 1), rnorm(1000, 0, 2), rnorm(1000, 2, 1))
 hist(platicurtica, probability = T)
 lines(density(platicurtica), col = "red", lwd = 3)
 
-kurtosis(platicurtica) # Platicúrtica
+kurtosis(platicurtica) # PlaticÃºrtica
