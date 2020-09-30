@@ -1,9 +1,9 @@
-# UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO
-# Facultad de Economía
-# Estadística 2020-2
-# Profesor: Cesar Hernández
-# Medidas de dispersión
-# Distribución normal en R: la regla empírica y la función rnorm()
+# UNIVERSIDAD NACIONAL AUTÃ“NOMA DE MÃ‰XICO
+# Facultad de EconomÃ­a
+# EstadÃ­stica 2020-2
+# Profesor: Cesar HernÃ¡ndez
+# Medidas de dispersiÃ³n
+# DistribuciÃ³n normal en R: la regla empÃ­rica y la funciÃ³n rnorm()
 
 normal <- rnorm(10000)
 
