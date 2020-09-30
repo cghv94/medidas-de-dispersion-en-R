@@ -1,2 +1,2 @@
-# medidas-de-dispersion
-Tutoriales sobre medidas de dispersión
+# medidas-de-dispersion-en-R
+Tutoriales sobre medidas de dispersión en R
