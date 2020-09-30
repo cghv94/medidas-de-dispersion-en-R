@@ -1,15 +1,15 @@
-# UNIVERSIDAD NACIONAL AUT覰OMA DE M蒟ICO
-# Facultad de Econom韆
-# Estad韘tica 2020-2
-# Profesor: Cesar Hern醤dez
-# Medidas de dispersi髇
-# Histogramas en R: funci髇 hist() y funci髇 barplot()
+# UNIVERSIDAD NACIONAL AUT脫NOMA DE M脡XICO
+# Facultad de Econom铆a
+# Estad铆stica 2020-2
+# Profesor: Cesar Hern谩ndez
+# Medidas de dispersi贸n
+# Histogramas en R: funci贸n hist() y funci贸n barplot()
 
 head(mtcars)
 
 summary(mtcars$qsec)
 
-# Con la funci髇 hist()
+# Con la funci贸n hist()
 
 hist(mtcars$qsec)
 
@@ -17,7 +17,7 @@ hist(mtcars$qsec, 5)
 
 hist(mtcars$qsec, 5, main = "Histograma", xlab = "Clase", ylab = "Frecuencia", col = "red")
 
-# Con la funci髇 barplot()
+# Con la funci贸n barplot()
 
 frecuencias <- table(cut(mtcars$qsec, breaks = 5))
 
